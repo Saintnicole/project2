@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Page</title>
+</head>
+<body>
+    <h1>&#10024; NICOLLETTA'S PORTFOLIO &#10024;</h1> 
+    <header>
+
+        <h2>The Tech Mogul</h2>
+
+        <!-- navlinks with unicode characters to show emojis. -->
+        <nav>
+            <ul>
+                <li><a href="#"></a> &#127968; Home</li>
+                <li><a href="#about"></a> &#128105; About</li>
+                <li><a href="work"></a> &#128188; Work</li>
+                <li><a href="#resume"></a>&#128196; Resume</li>
+                <li><a href="#contact"></a>&#128222; Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div>
+        <img src="nicole.jpeg" alt="An image of Nicole" width="500px" height="500px">
+    </div>
+
+    <main>
+
+        <form action="#">
+
+            <!--This is the about section-->
+            <div id="about">
+                <h3>About Nicolletta</h3>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="please enter your name..."  required><br><br>
+
+                <label for="bio">Short Bio:</label>
+                <textarea name="bio" id="bio" placeholder="tell us about yourself..." cols="40" rows="6"></textarea>
+
+                <!-- this is a audio recording that tell's us about nicole -->
+                <h5>Nicole's Audio Message</h5>
+                <audio src="New Recording.m4a" controls></audio>
+
+            </div>
+            <hr>
+            <!-- input area for nicole's current work -->
+            <div id="work">
+                <h3>Work</h3>
+                <label for="position"> Current Position:</label>
+                <input type="text" name="position" id="position"><br><br>
+                
+                <label for="company"> Company Name:</label>
+                <input type="text" name="company" id="company"><br><br>
+
+                
+                <label for="role"> Role Description:</label>
+                <textarea name="role" id="role" placeholder="briefly describe your role..." cols="40" ></textarea><br><br>
+            </div>
+
+            <hr>
+
+            <!-- this allows resume file input showing work history and more. -->
+            <div id="resume">
+                <h3>Resume</h3>
+                <label for="resume"> &#128194; Upload your Resume file:</label>
+                <input type="file" id="resume" name="resume"> <br>
+
+                    <h4>&#128640; Key Skills</h4>
+                    <!-- this table contains nicole's tech skills and her profieciency in them. -->
+                    <table border="1" cellpadding="5">
+                    <tr>
+                        <th>Skill</th>
+                        <th>Level</th>
+                    </tr>
+                    <tr>
+                        <td>Software Project Management</td>
+                        <td>&#127775; &#127775; &#127775; &#127775; &#127775;</td>
+                    </tr>
+                    <tr>
+                        <td>Machine Learning</td>
+                        <td>&#127775; &#127775; &#127775; &#127775;</td>
+                    </tr>
+                    <tr>
+                        <td>Web Development</td>
+                        <td>&#127775; &#127775; &#127775; &#127775; &#127775;</td>
+                    </tr>
+                    </table>
+            </div>
+            <hr>
+
+            <!-- this is a contact section -->
+            <div id="Contact">
+                <h3>Contact Section</h3>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+            </div>
+
+            <div>
+            
+                <label for="email">Phone Number:</label><br>
+                <input type="tel" id="phone" name="tel" required><br><br>
+            </div>
+
+            <div>
+                <label for="social">Github Username:</label><br>
+                <input type="text" id="social" name="social"><br><br>
+            </div>
+            
+        </form>
+    </main>
+    <hr>
+
+    <!-- a footer with copyright -->
+    <footer> 
+        <p> &copy; 2025 Nicolletta Eneji</p>
+
+    </footer>
+</body>
+</html>
