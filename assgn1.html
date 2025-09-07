@@ -3,91 +3,109 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles.css">
     <title>Portfolio Page</title>
-
-    <style>
-        a{
-            text-decoration: none;
-            color: black;
-        }
-
-        h2{
-            text-align: center;
-        }
-
-        p{
-            width: 1000px;
-            font-size: 20px;
-            padding: 10px;
-            display: flex;
-            text-align: justify;
-        }
-    </style>
 </head>
 <body>
-    <h1 style="font-size: 50px;">&#10024; NICOLLETTA'S PORTFOLIO &#10024;</h1> 
-    <header>
-
-        <h2 style="color: green; font-size: 30px; border-bottom: 1px solid green;">The Tech Mogul</h2>
-
-        <!-- navlinks leading to different sections of nicole's page with unicode characters to show emojis. -->
-        <nav>
-            <ul>
-                <li><a href="#"> &#127968; Home</a></li>
-                <li><a href="#about"> &#128105; About</a></li>
-                <li><a href="#work">&#128188; Work</a></li>
-                <li><a href="#resume">&#128196; Resume</a></li>
-                <li><a href="#contact">&#128222; Contact</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="nav-container">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#about">About</a>
+                <a href="#work" id="circle"> &#9673; Work</a>
+                <a href="#resume">Resume</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <h1 id="top-h1">&#10024; NICOLLETTA'S PORTFOLIO &#10024;</h1> 
+        <h2>The Tech Mogul</h2>
+        
     </header>
     <!-- an image of Nicole -->
-    <div>
-        <img src="nicole.jpeg" alt="An image of Nicole" width="500px" height="500px">
-    </div>
 
     <main>
+        <section class="about-container">
+            <img src="nicole.jpeg" alt="An image of Nicole">
 
 
-            <!--This is the about section-->
-            <section id="about">
-                <h3>About Nicolletta</h3>
-                <p>Nicole is a creative and driven individual with a passion for learning, innovation, and self-expression. 
+            <h3>About Nicolletta</h3>
+            <p>Nicole is a creative and driven individual with a passion for learning, innovation, and self-expression. 
                     She is articulate, thoughtful, and detail-oriented, often combining her analytical skills with a natural 
                     sense of creativity to produce meaningful work. Whether it’s through writing, technology, or problem-solving, 
                     Nicole approaches challenges with curiosity and determination, always striving to grow and make an impact. 
                     Her confidence and versatility allow her to adapt to different roles and environments, while her genuine personality 
                     makes her approachable and inspiring to those around her.
-                </p>
+            </p>
+            
+        </section>
 
-                <!-- this is a audio recording that tell's us about nicole -->
-                <h4>Nicole's Audio Message</h4>
-                <audio src="New Recording.m4a" controls></audio>
 
-            </section>
-            <hr>
-            <!-- input area for nicole's current work -->
-            <section id="work">
-                <h3>Work</h3>
-                <p> Role: Chief Technical Officer</p>
-                <p> Company Name: Data Global Limited</p>
-                <p> Location: Abuja</p>
+        <!--This is the about section-->
+        <section class="about">
+            <!-- this is a audio recording that tell's us about nicole -->
+            <h4>Nicole's Audio Message</h4>
+            <audio src="New Recording.m4a" controls></audio>
 
-            </section>
+        </section>
+        <hr>
+        <!-- input area for nicole's current work -->
+        <section class="work">
+            <div class="card">
+                <div class="card-inner">
+                    <!-- FRONT -->
+                    <div class="card-front">
+                        <img src="icons8-job-80.png" alt="Role Icon">
+                        <h3>ROLE</h3>
+                    </div>
+                    <!-- BACK -->
+                    <div class="card-back">
+                        <p>Built and maintained responsive websites, turning design ideas into interactive and user-friendly web pages with clean, efficient code.</p>
+                    </div>
+                </div>
+            </div>
 
-            <hr>
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="icons8-achievement-64.png" alt="Achievements Icon">
+                        <h3>ACHIEVEMENTS</h3>
+                    </div>
+                    <div class="card-back">
+                        <ul>
+                        <li>Delivered websites that worked smoothly across devices and browsers.</li>
+                        <li>Improved page load speed and usability, boosting customer engagement.</li>
+                        <li>Helped create consistent brand visuals through polished UI components.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
 
+            <div class="card">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="icons8-career-50.png" alt="Career Icon">
+                        <h3>CAREER</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Worked on projects ranging from small business sites to e-commerce platforms, focusing on layouts and user interaction while collaborating with designers and back-end devs.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
             <!-- this allows resume file input showing work history and more. -->
-            <section id="resume">
+            <section class="resume">
                 <h3>Resume</h3>
-                <a href="#" style="text-decoration: underline; color: green;">Click here to download my resume</a> <br>
+                <div class="video-container">
+                    <video src="nicoole.mp4" width="500px" height="400px" controls></video> <br>
+                    <!-- a video of Nicole explaining her experience -->
+                </div>
+                <div id="download-resume">
+                    <p>Above is a descriptive video of my work experience.<a href="#">Click here to download my resume.</a></p> 
+                </div>
+                <h4>&#128640; Key Skills</h4>
+                <div class="resume-table">
 
-                <video src="nicoole.mp4" width="500px" height="400px" controls></video>
-                <!-- a video of Nicole explaining her experience -->
-                <h3>Nicole's video </h3>  
-
-                    <h4>&#128640; Key Skills</h4>
+                    
                     <!-- this table contains nicole's tech skills and her profieciency in them. -->
 
                     <table border="1" cellpadding="5">
@@ -109,6 +127,7 @@
                         <td>&#127775; &#127775; &#127775; &#127775; &#127775;</td>
                     </tr>
                     </table>
+                </div>
             </section>
             
             <hr>
