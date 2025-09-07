@@ -24,7 +24,7 @@
     <!-- an image of Nicole -->
 
     <main>
-        <section class="about-container">
+        <section class="about-container" id="about">
             <img src="nicole.jpeg" alt="An image of Nicole">
 
 
@@ -49,7 +49,10 @@
         </section>
         <hr>
         <!-- input area for nicole's current work -->
-        <section class="work">
+        <section class="work" id="work">
+            <div id="work-heading">
+                <h2>Work History <span>&#10137;</span></h2>
+            </div>
             <div class="card">
                 <div class="card-inner">
                     <!-- FRONT -->
@@ -79,13 +82,17 @@
                     </div>
                 </div>
             </div>
-
+            <!-- this section contains a flip card that reveals two facea -->
             <div class="card">
                 <div class="card-inner">
+
+                    <!-- this is the front face of the card showing icons -->
                     <div class="card-front">
                         <img src="icons8-career-50.png" alt="Career Icon">
                         <h3>CAREER</h3>
                     </div>
+
+                    <!-- the back face of the card shows descriptive texts -->
                     <div class="card-back">
                         <p>Worked on projects ranging from small business sites to e-commerce platforms, focusing on layouts and user interaction while collaborating with designers and back-end devs.</p>
                     </div>
@@ -93,7 +100,7 @@
             </div>
         </section>
             <!-- this allows resume file input showing work history and more. -->
-            <section class="resume">
+            <section class="resume" id="resume">
                 <h3>Resume</h3>
                 <div class="video-container">
                     <video src="nicoole.mp4" width="500px" height="400px" controls></video> <br>
@@ -113,7 +120,7 @@
                         <th>Skill</th>
                         <th>Level</th>
                     </tr>
-                    <!-- the unicode characters represent stars showing how proficient she is in the skill -->
+                    <!-- thE characters represent stars showing how proficient she is in the skill -->
                     <tr>
                         <td>Software Project Management</td>
                         <td>&#127775; &#127775; &#127775; &#127775; &#127775;</td>
@@ -132,30 +139,31 @@
             
             <hr>
 
-            <!-- this is a contact section for external users to reach out to Nicole -->
-            <section id="contact">
-                <h3>Contact Section</h3>
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" required><br><br>
+           <!-- Contact Section: all INPUTinside one container -->
+            <section id="contact" id="contact">
+                <h3>Contact Me</h3>
+                <form class="contact-form">
+                    <!-- Email Input -->
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <!-- Phone Input -->
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="tel" required>
+
+                    <!-- Github Input -->
+                    <label for="social">Github Username:</label>
+                    <input type="text" id="social" name="social">
+
+                    <!-- Message Box -->
+                    <label for="msg">Short Message:</label>
+                    <textarea name="msg" id="msg" placeholder="Send a short message..."></textarea>
+
+                    <!-- Submit Button -->
+                    <button type="submit">Send Message</button>
+                </form>
             </section>
 
-            <section>
-            
-                <label for="email">Phone Number:</label><br>
-                <input type="tel" id="phone" name="tel" required><br><br>
-            </section>
-
-            <section>
-                <label for="social">Github Username:</label><br>
-                <input type="text" id="social" name="social"><br><br>
-            </section>
-            <section>
-                <label for="msg">Short Message:</label>
-                <textarea name="msg" id="msg" placeholder="send a short mmessage..." cols="40" rows="6"></textarea>
-            </section>
-
-            
-        
     </main>
     <hr>
 
